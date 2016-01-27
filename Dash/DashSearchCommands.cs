@@ -4,6 +4,7 @@ namespace Dash
 {
 	public enum DashSearchCommands
 	{
+		SearchDash,
 	}
 }
 
