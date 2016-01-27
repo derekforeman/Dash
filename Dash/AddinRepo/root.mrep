@@ -25,7 +25,7 @@
       </Dependencies>
       <OptionalDependencies />
       <Properties>
-        <Property name="DownloadSize">2647</Property>
+        <Property name="DownloadSize">2645</Property>
       </Properties>
     </Addin>
   </Addin>
