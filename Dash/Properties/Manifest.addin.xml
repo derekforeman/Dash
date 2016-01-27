@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ExtensionModel>
-    <Extension path = "/MonoDevelop/Ide/Commands/Search">
+    <Extension path = "/MonoDevelop/Ide/Commands/">
+     <Category _name = "Dash Integration" id="DashIntegration">
         <Command id = "Dash.DashSearchCommands.SearchDash"
         	description = "Search selected in Dash"
              _label = "Search in Dash"
              defaultHandler = "Dash.DashSearchHandler"
              shortcut = "Shift|Meta|E"
              macshortcut = "Shift|Meta|E" />
+             </Category>
     </Extension>
     <Extension path = "/MonoDevelop/Ide/MainMenu/Search">
         <CommandItem id="Dash.DashSearchCommands.SearchDash" />
