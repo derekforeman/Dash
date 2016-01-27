@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Repository xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Addin>
+    <Url>Dash.Dash_1.0.mpack</Url>
+    <Addin>
+      <Id>Dash</Id>
+      <Namespace>Dash</Namespace>
+      <Name>Dash</Name>
+      <Version>1.0</Version>
+      <BaseVersion />
+      <Author>Derek Foreman</Author>
+      <Copyright />
+      <Url />
+      <Description>Plugin to search Mono documentation in Dash</Description>
+      <Category>IDE extensions</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Core</AddinId>
+          <Version>5.10.1</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Ide</AddinId>
+          <Version>5.10.1</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">2647</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+</Repository>
