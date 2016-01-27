@@ -7,9 +7,9 @@
              shortcut = "Control|Shift|S" 
              macshortcut = "Meta|Shift|S" />
     </Extension>
-
     <Extension path = "/MonoDevelop/Ide/MainMenu/Search">
         <CommandItem id="Dash.DashSearchCommands.SearchDash" />
+        <SeparatorItem id = "OpenSeparator" />
     </Extension>
 
 </ExtensionModel>

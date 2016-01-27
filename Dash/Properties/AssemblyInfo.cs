@@ -7,10 +7,10 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyTitle ("Dash")]
 [assembly: AssemblyDescription ("")]
 [assembly: AssemblyConfiguration ("")]
-[assembly: AssemblyCompany ("Bloom Insurance Agency")]
+[assembly: AssemblyCompany ("")]
 [assembly: AssemblyProduct ("")]
-[assembly: AssemblyCopyright ("Bloom Insurance Agency")]
-[assembly: AssemblyTrademark ("Bloom Insurance Agency")]
+[assembly: AssemblyCopyright ("")]
+[assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
 
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".

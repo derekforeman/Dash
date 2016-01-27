@@ -5,6 +5,8 @@ namespace Dash
 	public enum DashSearchCommands
 	{
 		SearchDash,
+		MonoSearch,
+		NetSearch,
 	}
 }
 

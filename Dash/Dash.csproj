@@ -20,12 +20,19 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="AfterBuild" command="cp bin/Release/Dash.dll AddInRepo" workingdir="${ProjectDir}" />
+        <Command type="AfterBuild" command="mdtool setup pack ${ProjectDir}/AddinRepo/Dash.dll" workingdir="" />
+        <Command type="AfterBuild" command="mdtool setup rep-build ${ProjectDir}/AddinRepo" workingdir="" />
+        <Command type="AfterBuild" command="rm ${ProjectDir}/AddinRepo/Dash.dll" />
+      </CustomCommands>
+    </CustomCommands>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -41,5 +48,8 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="addin-project.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AddinRepo\" />
   </ItemGroup>
 </Project>
