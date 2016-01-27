@@ -4,7 +4,8 @@
         <Command id = "Dash.DashSearchCommands.SearchDash"
              _label = "Search in Dash"
              defaultHandler = "Dash.DashSearchHandler"
-             shortcut =  />
+             shortcut = "Control|Shift|S" 
+             macshortcut = "Meta|Shift|S" />
     </Extension>
 
     <Extension path = "/MonoDevelop/Ide/MainMenu/Search">

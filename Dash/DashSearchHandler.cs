@@ -15,7 +15,7 @@ namespace Dash
 
 			Console.WriteLine (	textEditorData.SelectedText);
 
-
+			System.Diagnostics.Process.Start (string.Format ("dash://{0}:{1}", "", textEditorData.SelectedText));
 		}
 
 		protected override void Update (CommandInfo info)

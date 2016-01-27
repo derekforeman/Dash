@@ -1,0 +1,7 @@
+﻿<AddinProject appVersion="5.*">
+	<Project platforms="Mac">
+		<AddinFile>Dash/bin/Release/Dash.dll</AddinFile>
+		<BuildFile>Dash.sln</BuildFile>
+		<BuildConfiguration>Release</BuildConfiguration>
+	</Project>
+</AddinProject>
