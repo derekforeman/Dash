@@ -1,5 +1,4 @@
-﻿using System;
-using MonoDevelop.Components.Commands;
+﻿using MonoDevelop.Components.Commands;
 using MonoDevelop.Ide;
 using MonoDevelop.Ide.Gui;   
 using Mono.TextEditor;
@@ -13,9 +12,9 @@ namespace Dash
 			Document doc = IdeApp.Workbench.ActiveDocument;
 			var textEditorData = doc.GetContent<ITextEditorDataProvider> ().GetTextEditorData ();  
 
-			Console.WriteLine (	textEditorData.SelectedText);
-
-			System.Diagnostics.Process.Start (string.Format ("dash://{0}:{1}", "Mono", textEditorData.SelectedText));
+			if (!string.IsNullOrEmpty (textEditorData.SelectedText)) {
+				System.Diagnostics.Process.Start (string.Format ("dash://{0}:{1}", "mono", textEditorData.SelectedText));
+			}
 		}
 
 		protected override void Update (CommandInfo info)

@@ -2,14 +2,14 @@
 <ExtensionModel>
     <Extension path = "/MonoDevelop/Ide/Commands/Search">
         <Command id = "Dash.DashSearchCommands.SearchDash"
+        	description = "Search selected in Dash"
              _label = "Search in Dash"
              defaultHandler = "Dash.DashSearchHandler"
-             shortcut = "Control|Shift|S" 
-             macshortcut = "Meta|Shift|S" />
+             shortcut = "Shift|Meta|E"
+             macshortcut = "Shift|Meta|E" />
     </Extension>
     <Extension path = "/MonoDevelop/Ide/MainMenu/Search">
         <CommandItem id="Dash.DashSearchCommands.SearchDash" />
-        <SeparatorItem id = "OpenSeparator" />
     </Extension>
 
 </ExtensionModel>

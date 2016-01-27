@@ -2,6 +2,6 @@
 	<Project platforms="Mac">
 		<AddinFile>Dash/bin/Release/Dash.dll</AddinFile>
 		<BuildFile>Dash.sln</BuildFile>
-		<BuildConfiguration>Release</BuildConfiguration>
+		<BuildConfiguration>Release-Addin</BuildConfiguration>
 	</Project>
 </AddinProject>
