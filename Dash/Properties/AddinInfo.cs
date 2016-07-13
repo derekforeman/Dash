@@ -5,7 +5,7 @@ using Mono.Addins.Description;
 [assembly:Addin (
 	"Dash", 
 	Namespace = "Dash",
-	Version = "1.3",
+	Version = "1.4",
 	Category = "IDE extensions"
 )]
 
