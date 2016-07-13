@@ -2,18 +2,16 @@
 using MonoDevelop.Ide;
 using MonoDevelop.Ide.Gui;   
 using Mono.TextEditor;
+using Dash.Helpers;
 
-namespace Dash
+namespace Dash.Commands
 {
 	public class DashSearchHandler : CommandHandler
 	{
-		protected override void Run ()
+		protected override void Run (object dataItem)
 		{
-			Document doc = IdeApp.Workbench.ActiveDocument;
-			var textEditorData = doc.GetContent<ITextEditorDataProvider> ().GetTextEditorData ();  
-
-			if (!string.IsNullOrEmpty (textEditorData.SelectedText)) {
-				System.Diagnostics.Process.Start (string.Format ("dash://{0}:{1}", "mono", textEditorData.SelectedText));
+			if (IdeApp.Workspace.IsOpen) {
+				DashProcess.Start (string.Empty);
 			}
 		}
 

@@ -10,6 +10,6 @@ using Mono.Addins.Description;
 
 [assembly:AddinName ("Dash")]
 [assembly:AddinCategory ("IDE extensions")]
-[assembly:AddinDescription ("Plugin to search Mono documentation in Dash")]
+[assembly:AddinDescription ("Plugin to search documentation in Dash")]
 [assembly:AddinAuthor ("Derek Foreman")]
 

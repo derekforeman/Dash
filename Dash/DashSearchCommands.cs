@@ -7,9 +7,12 @@ namespace Dash
 {
 	public enum DashSearchCommands
 	{
-		SearchDash,
 		MonoSearch,
 		NetSearch,
+		All,
+		Android,
+		Ios,
+		Xamarin
 	}
 }
 

@@ -1,17 +1,53 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ExtensionModel>
-    <Extension path = "/MonoDevelop/Ide/Commands/">
-     <Category _name = "Dash Integration" id="DashIntegration">
-        <Command id = "Dash.DashSearchCommands.SearchDash"
-        	description = "Search selected in Dash"
-             _label = "Search in Dash"
-             defaultHandler = "Dash.DashSearchHandler"
-             shortcut = "Shift|Meta|E"
-             macshortcut = "Shift|Meta|E" />
-             </Category>
-    </Extension>
-    <Extension path = "/MonoDevelop/Ide/MainMenu/Search">
-        <CommandItem id="Dash.DashSearchCommands.SearchDash" />
-    </Extension>
-
+	<Extension path="/MonoDevelop/Ide/Commands/Search">
+			<Command 
+				id="Dash.DashSearchCommands.XamarinSearch" 
+				description="Search selected in Dash" 
+				_label="Use Xamarin Docset" 
+				defaultHandler="Dash.Commands.XamarinSearchHandler"
+			/>
+			<Command 
+				id="Dash.DashSearchCommands.MonoSearch" 
+				description="Search selected in Dash" 
+				_label="Search Mono Docset" 
+				defaultHandler="Dash.Commands.MonoSearchHandler"
+			/>
+			<Command 
+				id="Dash.DashSearchCommands.NetSearch" 
+				description="Search selected in Dash" 
+				_label="Search .Net Docset"  
+				defaultHandler="Dash.Commands.NetSearchHandler"
+			/>
+			<Command 
+				id="Dash.DashSearchCommands.AndroidSearch" 
+				description="Search selected in Dash" 
+				_label="Search Android Docset"  
+				defaultHandler="Dash.Commands.AndroidSearchHandler"
+			/>
+			<Command 
+				id="Dash.DashSearchCommands.IosSearch" 
+				description="Search selected in Dash" 
+				_label="Search iOS Docset"  
+				defaultHandler="Dash.Commands.IosSearchHandler"
+			/>
+			<Command 
+				id="Dash.DashSearchCommands.All" 
+				description="Search selected in Dash" 
+				_label="Search all Docsets" 
+				defaultHandler="Dash.Commands.DashSearchHandler"
+				shortcut="Shift|Meta|E" 
+				macshortcut="Shift|Meta|E" 
+			/>
+	</Extension>
+	<Extension path="/MonoDevelop/Ide/MainMenu/Search">
+		<ItemSet id="Inspect" _label="Dash" insertafter="MonoDevelop.Ide.Commands.ViewCommands.Inspect">			
+			<CommandItem id="Dash.DashSearchCommands.MonoSearch" />
+			<CommandItem id="Dash.DashSearchCommands.NetSearch" />
+			<CommandItem id="Dash.DashSearchCommands.All" />
+			<CommandItem id="Dash.DashSearchCommands.Android" />
+			<CommandItem id="Dash.DashSearchCommands.Ios" />
+			<CommandItem id="Dash.DashSearchCommands.Xamarin" />
+		</ItemSet>
+	</Extension>
 </ExtensionModel>
