@@ -39,6 +39,13 @@
     <Optimize>false</Optimize>
     <OutputPath>bin\Release-Addin</OutputPath>
     <WarningLevel>4</WarningLevel>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="AfterBuild" command="mono /Applications/Unity/MonoDevelop.app/Contents/MacOS/lib/monodevelop/bin/mdtool.exe setup pack Dash.dll" workingdir="${TargetDir}" />
+        <Command type="Custom" name="CopyToAddinRepo" command="cp Dash.Dash_*.mpack ../../AddinRepo " />
+        <Command type="BeforeBuild" command="rm bin/Release-Addin/Dash.Dash_*.mpack" workingdir="${ProjectDir}" />
+      </CustomCommands>
+    </CustomCommands>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
