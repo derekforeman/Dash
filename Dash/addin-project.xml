@@ -1,4 +1,6 @@
-﻿<AddinProject appVersion="5.*">
+﻿<AddinProject appVersion="1.4">
+	    <Header>
+        <Name>Dash Search Integration</Name>
 	<Project platforms="Mac">
 		<AddinFile>Dash/bin/Release/Dash.dll</AddinFile>
 		<BuildFile>Dash.sln</BuildFile>
